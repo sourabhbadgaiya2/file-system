@@ -1,0 +1,149 @@
+/* body {
+  background-color: yellow !important;
+} */
+
+/* ----------------------Banks-data-css------------------------ */
+
+
+.text-center{
+    text-align: center !important
+  }
+
+  .font-boldi{
+    font-weight: 600;
+  }
+
+  .valuation-report tbody tr td{
+    border: 1px solid black !important
+    /* text-align: center; */
+  }
+
+
+
+  #radio tbody tr td{
+    border: 1px solid black !important;
+    text-align: center !important;
+  }
+
+  #catching{
+    text-align: justify !important;
+  }
+
+
+  @media(max-width: 580px) {
+    #social{
+      display: none !important;
+
+    }
+    /* CSS */
+
+  }
+
+  .td_sidebar_filter {
+    margin-right: 56px !important;
+  }
+
+  .td_card.td_style_5 .td_card_label {
+    position: absolute!important;
+    left: 10px !important;
+    top: 80% !important;
+    /* bottom: 20px !important; */
+  }
+
+  #table{
+    border: 1px solid black;
+  }
+
+
+  #table tbody tr td{
+    border: 1px solid black;
+    /* text-align: center; */
+    /* width: 70vw !important; */
+    /* height: 100%; */
+  }.custom-tabs .nav-link {
+    margin-right: 10px; /* Tabs के बीच में gap */
+    border-radius: 5px;
+    color: #000; /* default text color */
+  }
+  
+  .custom-tabss .nav-link.active {
+    background-color: #009DD9 !important; /* Active tab का background color */
+    color: #fff !important; /* Active tab का text color */
+  }.dropdown-item:hover {
+    background-color: transparent !important;  /* Removes the background color on hover */
+    color: inherit !important;  /* Keeps the original text color */
+  }
+  
+ /* fed invoces */
+ .bill-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.to-section {
+  width: 60%;
+}
+
+.company-info {
+  width: 35%;
+  text-align: right;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.bill-table th, .bill-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.bill-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.bill-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.total-row {
+  font-weight: bold;
+  background-color: #e6e6e6 !important;
+}
+
+.grand-total-row {
+  font-weight: bold;
+  background-color: #d4d4d4 !important;
+}
+
+.bank-details {
+  margin-top: 30px;
+}
+
+.bank-details div {
+  margin-bottom: 8px;
+}
+
+.bank-label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+.bank-value {
+  display: inline-block;
+}
