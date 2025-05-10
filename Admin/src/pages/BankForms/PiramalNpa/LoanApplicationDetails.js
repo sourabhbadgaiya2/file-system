@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import React, { useState } from "react"
+import { Row, Col } from "react-bootstrap"
 
 const LoanApplicationDetails = ({ onDataChange }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    onDataChange(prev => ({ ...prev, [name]: value }));
-  };
+  const handleChange = e => {
+    const { name, value } = e.target
+    onDataChange(prev => ({ ...prev, [name]: value }))
+  }
 
   return (
     <div className="accordion-item mb-4">
@@ -21,9 +21,9 @@ const LoanApplicationDetails = ({ onDataChange }) => {
           <button
             type="button"
             className="btn btn-light btn-sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsOpen(!isOpen);
+            onClick={e => {
+              e.stopPropagation()
+              setIsOpen(!isOpen)
             }}
           >
             {isOpen ? "Close" : "Edit"}
@@ -32,7 +32,10 @@ const LoanApplicationDetails = ({ onDataChange }) => {
       </div>
 
       {isOpen && (
-        <div className="accordion-body p-3 border rounded mt-2" style={{ backgroundColor: "#f8f9fa" }}>
+        <div
+          className="accordion-body p-3 border rounded mt-2"
+          style={{ backgroundColor: "#f8f9fa" }}
+        >
           <div className="card-body">
             <Row className="mb-3">
               <Col md={3}>
@@ -169,13 +172,11 @@ const LoanApplicationDetails = ({ onDataChange }) => {
                 />
               </Col>
             </Row>
-
-         
           </div>
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default LoanApplicationDetails;
+export default LoanApplicationDetails

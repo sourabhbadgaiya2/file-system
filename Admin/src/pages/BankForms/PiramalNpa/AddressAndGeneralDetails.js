@@ -57,7 +57,7 @@ const AddressAndGeneralDetails = ({ onDataChange }) => {
                   type="text"
                   name="floorNo"
                   className="form-control"
-                  defaultValue="NA"
+                  defaultValue="NA" 
                   onChange={handleChange}
                 />
               </Col>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 const JobDetailsForm = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   const [formData, setFormData] = useState({
     bankName: "",
     bankRefNo: "",
@@ -17,18 +17,18 @@ const JobDetailsForm = () => {
     propertyType: "",
     valuationType: "",
     specialInstructions: "",
-  });
+  })
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  const handleChange = e => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data Submitted: ", formData);
+  const handleSubmit = e => {
+    e.preventDefault()
+    console.log("Form Data Submitted: ", formData)
     // API call yaha se kar sakte ho
-  };
+  }
 
   return (
     <div className="container mt-4">
@@ -38,13 +38,13 @@ const JobDetailsForm = () => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="d-flex justify-content-between align-items-center text-white">
-          <h4 className="m-0">Location</h4>
+          <h4 className="m-0">Location </h4>
           <button
             type="button"
             className="btn btn-light btn-sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsOpen(!isOpen);
+            onClick={e => {
+              e.stopPropagation()
+              setIsOpen(!isOpen)
             }}
           >
             {isOpen ? "Close" : "Edit"}
@@ -207,13 +207,17 @@ const JobDetailsForm = () => {
             </div>
           </div>
 
-          <button style={{background: "#16828E"}} type="submit" className="btn btn-primary mt-3">
+          <button
+            style={{ background: "#16828E" }}
+            type="submit"
+            className="btn btn-primary mt-3"
+          >
             Save
           </button>
         </form>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default JobDetailsForm;
+export default JobDetailsForm
